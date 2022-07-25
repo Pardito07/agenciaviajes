@@ -2,7 +2,7 @@ import sequelize from 'sequelize';
 import dotenv from 'dotenv/config';
 
 //indicar la base de datos, usuario, contraseña y un objeto con la demas configuracion
-const db = new sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.BD_PASS, {
+const db = new sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PASS, {
     host: process.env.DB_HOST,
     port: '3306',
     dialect: 'mysql',
